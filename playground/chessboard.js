@@ -40,7 +40,7 @@ function createLine(width, style) {
 	}
 }
 
-function createChessboard(width, height, style) {
+function createChessboard({ width, height, style }) {
 	for (var i = 0; i < height; i++) {
 		createLine(width, style);
 		style = !style;
@@ -53,7 +53,7 @@ const myGrid = {
 	style: 0,
 };
 
-createChessboard(myGrid.width, myGrid.height, myGrid.style);
+createChessboard(myGrid);
 console.log(line);
 
 // Simpler solution

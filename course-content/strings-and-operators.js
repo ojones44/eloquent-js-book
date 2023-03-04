@@ -4,6 +4,8 @@ Single quotes and double quotes behave the same
 Back ticks (or template literals) can include ${}.
 This allows to include expressions or perform calculations
 
+Showing a dialog box or writing text to the screen is a side effect.
+
 */
 
 const lineBreak = 'This is a string\nwith a new line break';
