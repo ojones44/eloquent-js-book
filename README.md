@@ -1,6 +1,6 @@
 # Welcome to my **JS Course** repo 🙋🏻‍♂️
 
-<img src="./images/function-greet.png" width="150" />
+<img src="./images/function-greet.png" width="350" />
 
 ---
 
@@ -11,6 +11,8 @@
 > like is developed in practice – not learned from theory or a list of rules._ 😀
 
 ---
+
+### Why I'm pushing this to GitHub
 
 This repository is going be to be used to track my progress through learning JavaScript fundamentals.
 
@@ -25,7 +27,9 @@ I want to know how JavaScript is working under the hood.
 
 ---
 
-I compared this to my current job where I manufacture components through offline CNC programming. One can learn
+### Relating to my current coding problems
+
+I have compared this to my current job where I manufacture components through offline CNC programming. One can learn
 how to use CAM software, program a component, and prove that program on a machine without some background
 knowledge of machining. However, problems arise when issues are encountered in that process.
 
@@ -38,10 +42,12 @@ within a few seconds.
 
 ---
 
-Currently, it's not quite like this for me in coding. 😵‍💫
+### In Summary
 
-This is where the skill and background fundamental knowkledge kicks in. Without it - you can find yourself stuck.
+Currently, getting around issues is not quite as quick for me in coding. 😵‍💫
 
-I started to feel the same way about using React.
+This is where I feel that the skill and background fundamental knowkledge kicks in. 
+
+Without it - you can find yourself stuck. I started to feel the same way about using React.
 
 I'm hoping 🤞🏻 a better understanding of JavaScript is going to accelerate my progress - being as React is a JavaScript library.
