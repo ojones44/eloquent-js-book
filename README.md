@@ -1,6 +1,6 @@
 # Welcome to my **JS Course** repo 🙋🏻‍♂️
 
-<img src="./images/function-greet.png" width="50" />
+<img src="./images/function-greet.png" width="150" />
 
 ---
 
