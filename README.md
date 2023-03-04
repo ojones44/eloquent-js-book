@@ -13,8 +13,6 @@ Some of the code in these files are going to be collections of little snippets. 
 most tidy files. I have found this is how I learn quite well. I read something - and I'll go and mess
 around with it until I understand it.
 
-Of course - in a real application, this wouldn't be the case. 😎
-
 ---
 
 ### Eloquent JavaScript
@@ -59,7 +57,7 @@ within a few seconds.
 
 Currently, getting around issues is not quite as quick for me in coding. 😵‍💫
 
-This is where I feel that the skill and background fundamental knowkledge kicks in.
+This is where the skill and background fundamental knowkledge kicks in. Without it - you can find yourself stuck.
 
 Without it - you can find yourself stuck. I started to feel the same way about using React.
 
