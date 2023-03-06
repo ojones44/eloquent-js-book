@@ -27,12 +27,12 @@ around with it until I understand it.
 
 This repository is going be to be used to track my progress through learning JavaScript fundamentals.
 
-After completing a web dev course on Udemy and jumping into React - I found that whilst I could grasp
-the concepts and start to build basic applications, I felt I was lacking some fundamental lanaguage
-knowledge of the 3 core languages.
+After completing a web dev course on Udemy and jumping into React - I could grasp
+the concepts and start to build basic applications, however I felt I was lacking some important background
+knowledge of the 3 core languages - HTML, CSS and JavaScript.
 
 The main reason I could grasp concepts, I believe, is because I already had logical thought patterns
-from learning Python. However, without understanding of a language itself, it is still difficult.
+from learning Python. However, without an understanding of a language itself, it is still difficult.
 
 I want to know how JavaScript is working under the hood.
 
@@ -51,14 +51,14 @@ You could come across a situation where a cutting tool is not achieving the requ
 There are a 101 reasons why this could be. After 11 years in manufacturing engineering - usually I can spot the issue
 within a few seconds.
 
+Without the funamental knowledge of machining principles, I wouldn't be able to do that.
+
 ---
 
 ### In Summary
 
 Currently, getting around issues is not quite as quick for me in coding. 😵‍💫
 
-This is where the skill and background fundamental knowkledge kicks in. Without it - you can find yourself stuck.
-
-Without it - you can find yourself stuck. I started to feel the same way about using React.
+This is where the skill and background knowkledge kicks in. Without it - you can find yourself stuck. I started to feel the same way about using React.
 
 I'm hoping 🤞🏻 a better understanding of JavaScript is going to accelerate my progress - being as React is a JavaScript library.

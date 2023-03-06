@@ -5,11 +5,13 @@ Anything that produces a value in JS is an expression
 
 */
 
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-function range(start, end) {
+function range(start, end, step = 1) {
 	let range = [];
-	for (let i = start; i < end + 1; i++) {
+	for (
+		let i = start;
+		start > end ? i > end - 1 : i < end + 1;
+		start > end ? (i -= step) : (i += step)
+	) {
 		range.push(i);
 	}
 
@@ -23,9 +25,9 @@ function sum(array) {
 	return sum;
 }
 
-// console.log(sum(range(1, 10)));
+// console.log(sum(range(1, 10, 2)));
 
-// console.log(range(-10, -5));
+// console.log(range(1, 25, 12));
 
 module.exports = {
 	range,

@@ -1,29 +1,40 @@
 const { range } = require('./custom-functions');
 
 function getCharArray(x, y) {
-	return range(x, y).map((letter) => String.fromCharCode(letter));
+	return range(x, y).map((number) => String.fromCharCode(number));
 }
 
 function getRandInt(x) {
 	return Math.floor(Math.random() * x);
 }
 
-function passwordGenerator(length) {
+function passwordGenerator(length, specials = 0) {
 	let newPassword = '';
+	let charArrayGroup = [];
 
-	const lowerCase = getCharArray(97, 122);
-	const upperCase = getCharArray(65, 90);
-	const nums = getCharArray(48, 57);
+	charArrayGroup = charArrayGroup.concat(
+		getCharArray(97, 122),
+		getCharArray(65, 90),
+		getCharArray(48, 57)
+	);
 
-	const charArrayGroup = [lowerCase, upperCase, nums];
+	if (specials) {
+		charArrayGroup = charArrayGroup.concat(['?', '!', '%', '$']);
+	}
+
+	console.log(charArrayGroup);
+
+	// if (specials) {
+	// 	const specials = ['?', '!', '#', '&', '*'];
+	// }
 
 	for (let i = 0; i < length; i++) {
-		let arraySelection = charArrayGroup[getRandInt(charArrayGroup.length - 1)];
-		newPassword += arraySelection[getRandInt(arraySelection.length - 1)];
+		// let arraySelection = charArrayGroup[getRandInt(charArrayGroup.length - 1)];
+		newPassword += charArrayGroup[getRandInt(charArrayGroup.length - 1)];
 	}
 
 	return newPassword;
 }
 
-const myPassword = passwordGenerator(50);
+const myPassword = passwordGenerator(15, 1);
 console.log(`Your new password is: <<< ${myPassword} >>>`);
