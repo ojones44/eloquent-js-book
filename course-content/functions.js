@@ -242,3 +242,37 @@ function findSolution(target) {
 
 console.log(findSolution(24));
 // → (((1 * 3) + 5) * 3)
+
+/* -------------------------------------- */
+
+// Scope example
+
+var a = 1;
+var b = 2;
+
+function outer() {
+	var b = 4;
+	var c = 8;
+
+	function inner() {
+		c++;
+		a++;
+		// var b = 6;
+
+		function closure() {
+			return function () {
+				return a + b;
+			};
+		}
+
+		// console.log(a);
+		// console.log(b);
+		// console.log(c);
+
+		return closure();
+	}
+	return inner();
+}
+
+const result = outer();
+console.log(result());
