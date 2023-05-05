@@ -101,7 +101,7 @@ const reducer = (acc, value, i) => {
 	return i > 0 && acc + value;
 };
 
-const sum = nums.reduce((acc, value) => acc + value, 10);
+const sum = nums.reduce(reducer, 10);
 // console.log(sum);
 
 /* ------------------------------------------------ */
@@ -273,3 +273,69 @@ function sortByProperty(arr) {
 // );
 
 /* ------------------------------------------------ */
+
+// More reduce practice
+
+const staff = [
+	{ name: 'bob', position: 'developer', age: '25', dailyRate: 100 },
+	{ name: 'steve', position: 'developer', age: '25', dailyRate: 500 },
+	{ name: 'sarah', position: 'developer', age: '25', dailyRate: 300 },
+	{ name: 'phoebe', position: 'developer', age: '25', dailyRate: 250 },
+	{ name: 'robert', position: 'developer', age: '25', dailyRate: 425 },
+];
+
+const dailyRateTotal = staff.reduce((total, staffMember) => {
+	total += staffMember.dailyRate;
+	return total;
+}, 500);
+// console.log(dailyRateTotal);
+
+// Shopping cart simulation
+
+console.log('------------- SHOPPING CART SIMULATION ----------------');
+
+const cart = [
+	{
+		name: 'Google Pixel 7',
+		price: 599.99,
+		amount: 2,
+	},
+	{
+		name: 'Samsung Galaxy S21',
+		price: 1099.99,
+		amount: 1,
+	},
+	{
+		name: 'Nokia 3310',
+		price: 15.99,
+		amount: 10,
+	},
+	{
+		name: 'iPhone 13 Mini',
+		price: 399.99,
+		amount: 4,
+	},
+];
+
+let { totalItems, cartTotal } = cart.reduce(
+	(total, cartItem) => {
+		const { amount, price } = cartItem;
+		// Count items
+		total.totalItems += amount;
+		// Count sum
+		total.cartTotal += amount * price;
+		return total;
+	},
+	{
+		totalItems: 0,
+		cartTotal: 0,
+	}
+);
+
+cartTotal = parseFloat(cartTotal.toFixed(2));
+console.log(totalItems, cartTotal);
+
+function addItem(addedItem, amount) {
+	const alteredItem = cart.findIndex((cartItem) => cartItem.name === addedItem);
+	cart[alteredItem].amount += amount;
+}

@@ -53,3 +53,21 @@ to yield some value.
 null and undefined can be treated the same
 
 */
+
+const myStr = 'hello';
+
+function reverseString_1(str) {
+	return str.split('').reverse().join('');
+}
+
+function reverseString_2(str) {
+	const backwards = [];
+	for (let i = myStr.length; i > -1; i--) {
+		backwards.push(myStr[i]);
+	}
+
+	return backwards.join('');
+}
+
+console.log(reverseString_1(myStr));
+console.log(reverseString_2(myStr));

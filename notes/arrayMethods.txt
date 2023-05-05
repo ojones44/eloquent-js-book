@@ -1,0 +1,61 @@
+Methods:
+
+[x] Array.forEach()
+    > This method will loop through all the items in the array
+      and perform an action on them. forEach() always returns undefined and is not chainable. The typical use case is to execute side effects at the end of a chain.
+
+[x] Array.map()
+    > This method will loop through all the items in the array and perform a side effect on them similar to the forEach(), except map() will return a new array with the new values.
+
+[x] Array.filter()
+    > This method will loop through all the items in the array, and will return a new array with the new values based on the condition provided in the filter callback function.
+
+[x] Array.reduce()
+    > This method executes a 'reducer' function supplied to it on every iteration. The reducer function takes two arguments, an accumulator and the current iteration. Inside the reducer, it will return a value which then overwrites the accumulator. An inital value can be passed in with the function to be assigned to the accumulator - else the accumulator will be the value of the first item in the array.
+
+[x] Array.sort()
+
+
+[x] Array.some()
+    > This method will loop through all the items and return true if at least one of the items in the array meets the condition in the callback.
+
+[x] Array.every()
+     > This method will loop through all the items and return true if all of the items in the array meets the condition in the callback.
+
+[x] Array.slice()
+    > This will return the items of the array at and between the indexes provided to it. This will not modify the array.
+
+[x] Array.splice()
+    > This will remove or insert items to/from the array. This modifies the array directly and does not create a new one. 
+
+[x] Array.shift()
+    > Remove the first item from the array
+
+[x] Array.unshift()
+    > Append an item to the start of an array.
+
+[x] Array.push()
+    > Append an item to the end of an array.
+
+[x] Array.concat()
+    > Merge arrays together into one array.
+
+[x] Array.pop()
+    > Remove last item from the array.
+
+[x] Array.at()
+    > Get the data from the specified index of an array.
+
+[x] Array.reverse()
+    > Reverse the order of the array.
+
+[x] Array.flat()
+    > Similar to concat(). It will merge multiple arrays into one array. This functionality can also be achieved fairly well with the reduce() method.
+
+[x] Array.includes()
+    > Check if an array inculdes the provided data.
+
+
+[x] Array.from()
+    > This is a useful constructor that will create an array from the data passed inside in the method. Particularly useful for NodeLists which are return from querySelectors in JavaScript, where you are limited to what array methods you can perform on them as opposed to a standard JavaScrip array.
+
